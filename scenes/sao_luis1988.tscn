@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/STENCIL.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://materiais/imagem/tela_grajau.jpeg" type="Texture" id=2]
+[ext_resource path="res://script/sao_luis1988.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 37
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[node name="sao_luis1988" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 203, 353.5 )
+scale = Vector2( 0.572222, 0.558594 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Sprite"]
+margin_left = -139.618
+margin_top = -430.382
+margin_right = 104.382
+margin_bottom = -363.382
+custom_fonts/font = SubResource( 1 )
+text = "SAO LUIS 1988"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 246.0
+margin_top = 15.0
+margin_right = 372.0
+margin_bottom = 77.0
+
+[node name="cazumbar" type="TextureButton" parent="."]
+margin_left = 43.0
+margin_top = 18.0
+margin_right = 212.0
+margin_bottom = 84.0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="cazumbar" to="." method="_on_TextureButton_pressed"]

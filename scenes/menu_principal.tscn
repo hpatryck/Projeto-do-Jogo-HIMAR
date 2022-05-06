@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://script/menu.gd" type="Script" id=1]
+[ext_resource path="res://materiais/imagem/mune_inicial.jpeg" type="Texture" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="MuneInicial" type="Sprite" parent="."]
+position = Vector2( 208.625, 354.75 )
+scale = Vector2( 0.567708, 0.556641 )
+texture = ExtResource( 2 )
+
+[node name="button_comecar" type="TextureButton" parent="MuneInicial"]
+margin_left = -138.0
+margin_top = -155.0
+margin_right = 137.0
+margin_bottom = -65.0
+
+[node name="button_opcoes" type="TextureButton" parent="MuneInicial"]
+margin_left = -145.0
+margin_top = -23.0
+margin_right = 141.0
+margin_bottom = 66.0
+
+[node name="button_ranking" type="TextureButton" parent="MuneInicial"]
+margin_left = -139.0
+margin_top = 143.0
+margin_right = 135.0
+margin_bottom = 216.0
+
+[node name="button_instrucoes" type="TextureButton" parent="MuneInicial"]
+margin_left = -133.611
+margin_top = 278.838
+margin_right = 147.389
+margin_bottom = 378.838
+
+[connection signal="pressed" from="MuneInicial/button_comecar" to="." method="_on_button_comecar_pressed"]
+[connection signal="pressed" from="MuneInicial/button_opcoes" to="." method="_on_button_opcoes_pressed"]
+[connection signal="pressed" from="MuneInicial/button_ranking" to="." method="_on_button_ranking_pressed"]
+[connection signal="pressed" from="MuneInicial/button_instrucoes" to="." method="_on_button_instrucoes_pressed"]
