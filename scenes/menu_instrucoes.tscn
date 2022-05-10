@@ -14,10 +14,12 @@ scale = Vector2( 0.563889, 0.551562 )
 texture = ExtResource( 1 )
 
 [node name="button_voltar" type="TextureButton" parent="MenuInstrucoes"]
-margin_left = -151.0
-margin_top = 224.0
-margin_right = 147.0
-margin_bottom = 335.0
+margin_left = -131.232
+margin_top = 223.003
+margin_right = 148.768
+margin_bottom = 323.003
+rect_rotation = 360.0
+expand = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 81.0

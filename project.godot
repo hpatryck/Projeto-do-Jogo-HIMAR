@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="projeto_teste2_menu"
+config/name="Projeto_do_jogo_himar"
 run/main_scene="res://scenes/video.tscn"
 config/icon="res://icon.png"
 

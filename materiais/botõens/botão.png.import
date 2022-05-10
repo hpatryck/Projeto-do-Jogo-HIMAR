@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WhatsApp Image 2022-04-30 at 20.43.06.jpeg-ba6d08b7555663b393d3e532c54b63e3.stex"
+path="res://.import/botão.png-644474e3f4a235e5a247521fcaa59a49.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://materiais/imagem/WhatsApp Image 2022-04-30 at 20.43.06.jpeg"
-dest_files=[ "res://.import/WhatsApp Image 2022-04-30 at 20.43.06.jpeg-ba6d08b7555663b393d3e532c54b63e3.stex" ]
+source_file="res://materiais/botõens/botão.png"
+dest_files=[ "res://.import/botão.png-644474e3f4a235e5a247521fcaa59a49.stex" ]
 
 [params]
 
