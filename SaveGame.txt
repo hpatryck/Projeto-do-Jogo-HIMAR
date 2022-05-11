@@ -1,0 +1,1 @@
+jogador,3000.jogador2,2000.jogador3,4000.jogador4,0.

@@ -57,7 +57,7 @@ text = "INICIAR O JOGO"
 align = 1
 valign = 1
 
-[node name="TextEdit" type="TextEdit" parent="Sprite"]
+[node name="TextEdit1" type="TextEdit" parent="Sprite"]
 margin_left = -102.0
 margin_top = -154.0
 margin_right = 59.0
