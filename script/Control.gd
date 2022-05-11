@@ -19,8 +19,6 @@ func _ready():
 				sortplayers.insert(len(sortplayers), players)
 		else:
 			sortplayers.append(players)
-	print(sortplayers)
-
 
 func get_not_text():
 	var file = File.new()
