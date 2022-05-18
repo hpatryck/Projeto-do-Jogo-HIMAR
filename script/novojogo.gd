@@ -1,28 +1,29 @@
 extends Control
 
 const player = [-1]
-
+var nome = 1
 func _ready():
 	pass
 
 	
 func _on_TextureButton_pressed():
-	var txt = $Sprite/TextEdit1.get_text()
-	var text = get_not_text()
-	var note = text.split(".", false)
-	var players = []
-	for i in range(len(note)):
-		players.append(note[i].split(",", false))
-		if players[i][0] == txt:
-			player[0] = i
-			print(player)
-	if player[0] == -1:
-		players.append([txt, 0])
-		player[0] = len(players)
-		text += ("%s," % players[-1][0]) + ("%s." % players[-1][1])
-		save(text)
-	get_tree().change_scene("res://scenes/tela_grajau.tscn")
-	
+	if ($Sprite/TextEdit1.text != ""):
+		var txt = $Sprite/TextEdit1.get_text() + "\t"
+		var text = get_not_text() + "\n"
+		var note = text.split(".", false)
+		var players = []
+		for i in range(len(note)):
+			players.append(note[i].split(",", false))
+			if players[i][0] == txt:
+				player[0] = i
+				print(player)
+		if player[0] == -1:
+			players.append([txt, 0])
+			player[0] = len(players)
+			text += ("%s," % players[-1][0]) + ("%s." % players[-1][1])
+			save(text)
+		get_tree().change_scene("res://scenes/tela_grajau.tscn")
+		
 	#save(txt)
 	#print(txt.split("."))
 

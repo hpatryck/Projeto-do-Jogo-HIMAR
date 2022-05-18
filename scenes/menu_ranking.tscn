@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://materiais/imagem/menu_ranking.jpeg" type="Texture" id=1]
 [ext_resource path="res://script/Control.gd" type="Script" id=2]
+[ext_resource path="res://fonts/BRITANIC.TTF" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
 
 [node name="menu_ranking" type="Control"]
 anchor_right = 1.0
@@ -18,5 +22,13 @@ margin_left = -134.049
 margin_top = 247.765
 margin_right = 93.9513
 margin_bottom = 304.765
+
+[node name="ranking" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 247.0
+margin_right = 334.0
+margin_bottom = 414.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
 
 [connection signal="pressed" from="MenuRanking/button_voltar" to="." method="_on_button_voltar_pressed"]

@@ -6,6 +6,7 @@ func _ready():
 	var text = txt.split(".", false)
 	var players = []
 	var sortplayers = []
+	$ranking.text =txt
 	for i in text:
 		players = (i.split(",", false))
 		if(len(sortplayers) > 0):
