@@ -7,6 +7,7 @@ func _ready():
 
 	
 func _on_TextureButton_pressed():
+<<<<<<< Updated upstream
 	if ($Sprite/TextEdit1.text != ""):
 		var txt = $Sprite/TextEdit1.get_text() + "\t"
 		var text = get_not_text() + "\n"
@@ -24,6 +25,27 @@ func _on_TextureButton_pressed():
 			save(text)
 		get_tree().change_scene("res://scenes/tela_grajau.tscn")
 		
+=======
+	var txt = $Sprite/TextEdit1.get_text()
+	var text = get_not_text()
+	var note = text.split(".", false)
+	var players = []
+	for i in range(len(note)):
+		players.append(note[i].split(",", false))
+		if players[i][0] == txt:
+			player[0] = i
+			print(player)
+	if(len(players) == 50):
+		print("Máximo de 50 jogadores atingido!")
+		return
+	if player[0] == -1:
+		players.append([txt, 0])
+		player[0] = len(players)
+		text += ("%s," % players[-1][0]) + ("%s." % players[-1][1])
+		save(text)
+	get_tree().change_scene("res://scenes/tela_grajau.tscn")
+	
+>>>>>>> Stashed changes
 	#save(txt)
 	#print(txt.split("."))
 
